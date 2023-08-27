@@ -4,6 +4,7 @@ import axios from 'axios';
 import Product from '../components/Product'
 const HomeScreen = () => {
   const [products, setProducts] = useState([]);
+  
   useEffect(()=>{
     const fecthProducts = async () =>{
       const { data } = await axios.get('/api/products');
